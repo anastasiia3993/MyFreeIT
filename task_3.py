@@ -2,40 +2,34 @@
 print('Hello world')
 # Task 3.2
 print('Enter your name:')
-user = str(input())
-print('Hello,' + user + '!')
+user = str(input("What is your name?"))
+print(f"Hello, {user}")
 # Task 3.3
-a = "Hi, I am string variable"
 b = 100
-print(a,b)
+print(f"Hi, I'm a string variable {b}")
 # Task 3.4
 import math
 print ("The factorial of 100 is : ", math.factorial(100))
 # Task 3.5
 c = range(0,101)
 tup = tuple(c)
-print("This is my tuple:")
-print(tup[0:101:2])
+print(f"This is my tuple:\n {tup[0:101:2]}")
 # Task 3.6
 lst = list(tup)
 d = [i*i for i in lst]
-print("This is my list:")
-print(d)
+print(f"This is my list:\n {d}")
 # Task 3.7
 e = "sounds/lofi/chilstep.wav"
 print("This is my modified string:")
 print(e.replace("sounds", "midi"))
-print("This is file extension:")
-print(e[20:24])
+print(f"This is file extension: \n {e[20:]}")
 # Task 3.8
 f = [1, 1, 2, 3, 5, 8, 10, 10]
 g = set(f)
-print("This is my list with unique elements:")
-print(g)
+print(f"This is my list with unique elements:\n {g}")
 # Task 3.9
 h = [i+1 for i in f]
-print("This is my modified list:")
-print(h)
+print(f"This is my modified list:\n {h}")
 # Task 3.10
 i = "Python is the most popular programming language"
 print("Amount of 'p' in string 'Python is the most popular programming language':")
@@ -45,5 +39,4 @@ j = [0, 2, 3, 4]
 k = [2, 2, 5]
 l = set(j) - set(k)
 m = list(l)
-print("This is the difference between two lists:")
-print(m)
+print(f"This is the difference between two lists:\n {m}")
