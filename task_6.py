@@ -1,21 +1,23 @@
 #Task 6.1
 
-def write(*args):
-    print('Type the name of file:')
-    mode = 'w'
-    file = open(str(input()), mode)
-    print('Type your string:')
-    string = str(input())
+print('Type the name of file:')
+path = str(input())
+mode = 'w'
+print('Type your string:')
+string = str(input())
+def write(path, mode, string):
+    file = open(path, mode)
     file.write(string)
+    file.close
 
-write()
+write(path, mode, string)
 
 
 #Task 6.2
 
-def season(*args):
-    print('Type a number of mounth:')
-    a = int(input())
+print('Type a number of mounth:')
+a = int(input())
+def season(a):
     if 1 <= a <= 2 or a == 12:
         print('winter')
     elif 3 <= a <= 5:
@@ -27,7 +29,7 @@ def season(*args):
     else:
         print('You should write a number from 1 to 12!')
 
-season()
+season(a)
 
 
 #Task 6.3
